@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparência — Operação Noel</title>
+  <link rel="icon" href="assets/simbolo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="transparencia">
+  <div id="cabecalho"></div>
+
+  <main class="container pagina">
+    <div class="cabeca-secao">
+      <div>
+        <div class="eyebrow">TRANSPARÊNCIA</div>
+        <h1 class="titulo-pagina">Para onde vai <strong>cada real</strong></h1>
+      </div>
+      <div class="aviso" id="aviso-exemplo">VALORES DE EXEMPLO</div>
+    </div>
+
+    <div class="grade-numeros">
+      <div class="card"><div class="rotulo">Arrecadado</div><div class="valor-grande arrecadado"></div></div>
+      <div class="card"><div class="rotulo">Gasto</div><div class="valor-grande vermelho-txt" id="total-gasto"></div></div>
+      <div class="card"><div class="rotulo">Saldo</div><div class="valor-grande verde-txt" id="saldo"></div></div>
+      <div class="card card-escuro">
+        <div class="rotulo">Meta · <span class="pct-meta"></span></div>
+        <div class="valor-medio meta"></div>
+        <div class="barra barra-escura"><div class="barra-preenchida vermelho"></div></div>
+      </div>
+    </div>
+
+    <div class="grade-2">
+      <div class="card">
+        <div class="subtitulo">Gastos por categoria</div>
+        <div id="categorias"></div>
+      </div>
+      <div>
+        <div class="filtros" id="filtros"></div>
+        <div class="tabela" id="tabela-gastos"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="js/dados.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/transparencia.js"></script>
+</body>
+</html>
